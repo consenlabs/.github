@@ -1,1 +1,1 @@
-# .github
+# github-health-file-template
