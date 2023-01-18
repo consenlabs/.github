@@ -1,7 +1,5 @@
-# github-health-file-template
-
-The repo is share github health file template, such as
-pull request template, issue template, etc...
+Default Community health files for Consenlabs
+projects. such aspull request template, issue template, etc...
 
 # Copy pll request template file to your repo
 
