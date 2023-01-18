@@ -13,11 +13,11 @@ curl -o target/path/filename URL
 ## Backend
 
 ```
-curl -o .github/PULL_REQUEST_TEMPLATE.md https://raw.githubusercontent.com/consenlabs/github-health-file-template/main/docs/PULL_REQUEST_TEMPLATE/be-pull-request-template.md
+curl -o .github/PULL_REQUEST_TEMPLATE.md https://raw.githubusercontent.com/consenlabs/.github/main/docs/PULL_REQUEST_TEMPLATE/be-pull-request-template.md
 ```
 
 ## Frontend
 
 ```
-curl -o .github/PULL_REQUEST_TEMPLATE.md https://raw.githubusercontent.com/consenlabs/github-health-file-template/main/docs/PULL_REQUEST_TEMPLATE/fe-pull-request-template.md
+curl -o .github/PULL_REQUEST_TEMPLATE.md https://raw.githubusercontent.com/consenlabs/.github/main/docs/PULL_REQUEST_TEMPLATE/fe-pull-request-template.md
 ```
