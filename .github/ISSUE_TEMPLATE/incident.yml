@@ -37,18 +37,6 @@ body:
         1. ...
         2. ...
 
-  - type: dropdown
-    id: severity
-    attributes:
-      label: "🎯 Severity"
-      options:
-        - P0 - Service Down
-        - P1 - Major Feature Broken
-        - P2 - Minor Feature Affected
-        - P3 - Cosmetic / Low Impact
-    validations:
-      required: true
-
   - type: textarea
     id: related
     attributes:
