@@ -1,0 +1,92 @@
+name: "🐞 Bug Report"
+description: "Report a bug or defect"
+type: "Bug"
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: "🐞 Summary"
+      description: "Short, specific, action-oriented description"
+      placeholder: "Describe the bug..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: "📱 Platform"
+      options:
+        - iOS
+        - Android
+        - Web
+        - All
+    validations:
+      required: true
+
+  - type: input
+    id: device
+    attributes:
+      label: "Device / OS"
+      placeholder: "e.g. iPhone 15 / iOS 18.1"
+
+  - type: input
+    id: app_version
+    attributes:
+      label: "App version / Build number"
+      placeholder: "e.g. 2.18.1.9048"
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: "🔁 Steps to Reproduce"
+      description: "Step-by-step instructions"
+      placeholder: |
+        1. Go to...
+        2. Click on...
+        3. Observe...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: "✅ Expected Result"
+      description: "What should happen"
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: "❌ Actual Result"
+      description: "What actually happens"
+    validations:
+      required: true
+
+  - type: textarea
+    id: attachments
+    attributes:
+      label: "📎 Attachments"
+      description: "Screenshots, video, logs"
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: "🎯 Severity"
+      options:
+        - Blocker
+        - Major
+        - Minor
+        - Trivial
+    validations:
+      required: true
+
+  - type: textarea
+    id: related
+    attributes:
+      label: "🔗 Related"
+      description: "Acceptance criteria, design/spec link, PR/commit, Jira link"
+      placeholder: |
+        - Acceptance criteria:
+        - Design / Spec link:
+        - PR / Commit (if known):
