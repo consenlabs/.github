@@ -69,18 +69,6 @@ body:
       label: "📎 Attachments"
       description: "Screenshots, video, logs"
 
-  - type: dropdown
-    id: severity
-    attributes:
-      label: "🎯 Severity"
-      options:
-        - Blocker
-        - Major
-        - Minor
-        - Trivial
-    validations:
-      required: true
-
   - type: textarea
     id: related
     attributes:
