@@ -1,0 +1,29 @@
+name: "📝 Task"
+description: "Track a task or work item"
+title: "[Task] "
+type: "Task"
+body:
+  - type: textarea
+    id: background
+    attributes:
+      label: "背景"
+      description: "要解决的问题，即 WHY"
+      placeholder: "请说明当前背景和要解决的问题..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: "解决方案"
+      description: "如何做、做什么，即 HOW & WHAT"
+      placeholder: "请说明具体的解决方案"
+
+  - type: textarea
+    id: measure_done
+    attributes:
+      label: "完成的定义"
+      description: "MeasureDone"
+      placeholder: "请说明任务完成的判断标准..."
+    validations:
+      required: true
