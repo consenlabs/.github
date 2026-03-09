@@ -1,0 +1,71 @@
+name: "📖 Story"
+description: "Track a user story"
+title: "[Story] "
+type: "Story"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请按照用户故事格式填写，并确保该 Story 符合 INVEST 原则。
+
+  - type: input
+    id: summary
+    attributes:
+      label: "Summary"
+      description: "请使用用户故事格式描述需求"
+      placeholder: "作为一个<角色>，我想要<功能>，以便于<业务价值>"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: "补充背景、目标、范围、依赖或限制条件"
+      value: |
+        用户故事必须符合 INVEST 原则。即：独立于其他用户故事、可以协商讨论的、必须对用户有价值的、可估算的、工作量尽量小到一个工作周期内能完成的、可独立提测的
+
+        请补充：
+        - 背景 / 问题
+        - 目标 / 业务价值
+        - 范围 / 非范围
+        - 依赖 / 风险
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ### 验收标准 (Acceptance Criteria)
+
+  - type: textarea
+    id: acceptance_criteria_functional
+    attributes:
+      label: "Functional 功能型"
+      description: "请逐条列出可验证的功能验收标准"
+      placeholder: |
+        - 当...
+        - 如果...
+        - 那么...
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance_criteria_non_functional
+    attributes:
+      label: "Non-functional 非功能型"
+      description: "请补充安全性、可用性、兼容性、稳定性等非功能要求"
+      placeholder: |
+        - 兼容性：
+        - 安全性：
+        - 可观测性：
+
+  - type: textarea
+    id: acceptance_criteria_performance
+    attributes:
+      label: "Performance 性能"
+      description: "请补充性能相关要求，如响应时间、吞吐量、资源占用等"
+      placeholder: |
+        - 响应时间：
+        - 吞吐量：
+        - 资源占用：
